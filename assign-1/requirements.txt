@@ -1,0 +1,4 @@
+sacred
+numpy
+matplotlib
+scipy

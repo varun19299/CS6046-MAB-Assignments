@@ -1,0 +1,27 @@
+init: Histogram  # comments done python-style
+
+horizon: 10000
+cycles: 100
+
+Simulation 1:
+    Algorithm:
+        algtype: UCB
+        incr: B7
+        alpha: 0.5
+    Bandit:
+        ArmList:
+        - [Bernoulli, [0.5]]
+        - [Bernoulli, [0.4]]
+        - [Bernoulli, [0.4]]
+        - [Bernoulli, [0.4]]
+        - [Bernoulli, [0.4]]
+        - [Bernoulli, [0.4]]
+        - [Bernoulli, [0.4]]
+        - [Bernoulli, [0.4]]
+        - [Bernoulli, [0.4]]
+        - [Bernoulli, [0.4]]
+    label: "UCB"
+
+PlotTitle: "Horizon 500 -- Means (0.3, 0.4, 0.5) -- Bernoulli"
+PlotSave: "example.pdf"
+Animate: False
